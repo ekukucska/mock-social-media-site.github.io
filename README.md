@@ -1,6 +1,6 @@
 # Mock Social Media Site
 
-**Final project for the "JavaScript & jQuery" course / IT SChool (Timisoara) /  January 2019.**
+**Final project for the "JavaScript & jQuery" course / IT School (Timisoara) /  January 2019.**
 
 ## Description
 
