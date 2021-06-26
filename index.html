@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <title>Welcome</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Style al nostru se incarca dupa orice alt CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+  <body class="login-page">
+    <div class="login-wrapper">
+      <!-- Tab links - Login & Register Buttons -->
+      <div class="tab">
+        <button class="tablinks active" onclick="openCity(event, 'login')">
+          Log in
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'register')">
+          Register
+        </button>
+      </div>
+
+      <!-- Tab content -->
+      <!-- Login -->
+      <div id="login" class="tabcontent" style="display: block">
+        <h2>Login</h2>
+        <form action="newsfeed.html">
+          <input
+            type="text"
+            placeholder="Username or E-mail"
+            id="inputUsername"
+          />
+          <input type="password" placeholder="Password" id="inputPassword" />
+          <button id="login-button" onclick="checkLogin(event)">
+            <span>Login</span>
+            <i class="fa fa-sign-in"></i>
+          </button>
+        </form>
+        <div id="error-message"></div>
+      </div>
+      <!-- Register -->
+      <div id="register" class="tabcontent">
+        <h2>Register</h2>
+        <form>
+          <input
+            type="text"
+            placeholder="Full Name (Mandatory)"
+            id="registerFullName"
+          />
+          <input
+            type="email"
+            placeholder="Email address (Mandatory)"
+            id="registerEmail"
+          />
+          <input type="text" placeholder="Username" id="registerUsername" />
+          <input type="password" placeholder="Password" id="registerPassword" />
+          <button id="register-button" onclick="checkRegister(event)">
+            <span>Register</span>
+            <i class="fa fa-pencil-square"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- ***SKIP SIGN IN -->
+      <br />
+      <br />
+      <div class="skip-sign-in">
+        <a href="newsfeed.html">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          Click here to skip sign in</a
+        >
+      </div>
+    </div>
+
+    <!-- Login - Tabs -->
+    <script></script>
+  </body>
+</html>
