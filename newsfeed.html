@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <title>Eduard Kukucska | Newsfeed</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i");
+    </style>
+    <!-- Custom style -->
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </head>
+
+  <body class="newsfeed">
+    <!-- HEADER -->
+    <header class="row">
+      <div class="container row">
+        <div class="left row">
+          <div class="logo">
+            <a href="newsfeed.html">
+              <i class="fa fa-grav"></i>
+            </a>
+          </div>
+          <form>
+            <input type="text" placeholder="Search..." />
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="right row">
+          <ul class="row">
+            <li>
+              <a href="#">
+                <i class="fa fa-users"></i>
+              </a>
+              <div class="infobox" id="dropdown-friends-list">
+                <i class="fa fa-caret-up" id="friends-dropdown"></i>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-commenting"></i>
+              </a>
+              <div class="infobox" id="dropdown-comments-list">
+                <i class="fa fa-caret-up"></i>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-gear"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-question-circle"></i>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <i class="fa fa-sign-out"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- END - HEADER -->
+
+    <div class="container row">
+      <!-- USER PROFILE -->
+      <aside class="account">
+        <div class="user row">
+          <a href="#" id="userData">
+            <div class="profile-image"></div>
+            <div class="profile-details"></div>
+          </a>
+        </div>
+
+        <ul class="links">
+          <li>
+            <a href="#">
+              <i class="fa fa-user"></i>
+              <span>Friends</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-commenting"></i>
+              <span>Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-globe"></i>
+              <span>Discover</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-gamepad"></i>
+              <span>Games</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-users"></i>
+              <span>Groups</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- END - USER PROFILE -->
+      <main>
+        <!-- POST COMMENT-->
+        <article>
+          <div class="header row">
+            <a href="#">
+              <div class="profile-image"></div>
+              <div class="profile-details">
+                <h3>Create post</h3>
+              </div>
+            </a>
+          </div>
+          <div class="content">
+            <textarea placeholder="What's on your mind?" rows="3"></textarea>
+          </div>
+          <div class="footer">
+            <ul class="row">
+              <li>
+                <a href="">
+                  <i class="fa fa-send"></i>
+                  <span>Post</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- END - POST COMMENT -->
+      </main>
+
+      <!-- ADDS -->
+      <aside class="ads">
+        <div class="ad">
+          <img src="img/adds/add-img-1.jpg" id="addsImage" />
+          <p id="addsText">
+            <a href="#" id="add-link">Try Colorado's best!</a>
+          </p>
+        </div>
+      </aside>
+      <!-- END - ADDS -->
+    </div>
+  </body>
+</html>
